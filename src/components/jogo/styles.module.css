@@ -1,0 +1,61 @@
+.gameBody{
+    min-width: 10rem;
+    width: 24%;
+    max-width: 24%;
+    padding-top: 2%;
+}
+
+.gameList{
+    height: 100%;   
+    width: 100%;
+}
+
+.gameLine{
+    height: 16.66%;
+    width: 100%;
+    
+
+    
+}
+.containerInput {
+    height: 100%;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.containerInput input {
+        all: unset;
+    font-family: "Montserrat", sans-serif;
+    background-color: #6e5c62;
+    border-radius: 10%;
+    height: 90%;
+    width: 20%;
+    border: none;
+    box-shadow: inset 0 0 0 0.5vh #4c4347;
+    color: white;
+    box-shadow: 0;
+    font-size: 4.3vh;
+    font-weight: bold;
+    padding: 0;
+    caret-color: transparent; /* Esconde o cursor */
+    text-align: center;
+    margin: 0 0.7%; 
+}
+
+.containerInput input:focus{
+    box-shadow: inset 0 0 0 0.5vh #4c4347,
+                inset 0 -1vh 0 0 #4c4347 !important;
+}
+.containerInput input:hover{
+    cursor:pointer;
+}
+
+.containerInput input:disabled{
+    
+    background-color: #4c4347;
+}
+
+
+

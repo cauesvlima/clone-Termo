@@ -1,0 +1,35 @@
+
+
+.letras{
+padding-top: 2%;
+}
+
+
+.linhaLetras{
+    justify-content: center;
+    display: flex;
+    padding-top: 1%;
+}
+.linhaLetras div{
+    color: white;
+    background-color: #4c4347;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0 0.5vh;
+    font-size: 3.5vh;
+    font-weight: bold;
+    height: 7vh;
+    width: 6vh;
+    border-radius: 0.6vh;
+    cursor: pointer;
+}
+.linhaLetras div:active{
+    background-color: #42393d;
+}
+
+.submit{
+    width: auto !important;
+    border-radius: 8% !important ;
+    padding: 0 3vh !important;
+}
