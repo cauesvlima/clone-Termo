@@ -8,9 +8,12 @@ import { GeraPalavra } from '../components/geraPalavra';
 export const Termo = () => {
     const [palavraDoDia, setPalavraDoDia] = useState();
     const [camposUsados, setCamposUsados] = useState();
+    const [arrayPalavra, setArrayPalavra] = useState();
+    const [troca, setTroca]= useState('a');
     useEffect(()=>{
         GeraPalavra();
     },[])
+
     useEffect(()=>{
         setPalavraDoDia(localStorage.getItem('palavra'));
     })
@@ -25,13 +28,28 @@ export const Termo = () => {
             if(stringWorld===palavraDoDia){
                 alert("você ganhou");
             } else {
-
+                
                 let palavraArray = palavraDoDia.toUpperCase();
                 palavraArray = palavraArray.split('');
-
-
+                setArrayPalavra(palavraArray);
+                if(troca=='a'){
+                    setTroca('b');
+                } else if (troca == 'b'){
+                    setTroca('c');
+                } else if (troca == 'c'){
+                    setTroca('d');
+                } else if (troca == 'd'){
+                    setTroca('e');
+                }else if (troca == 'e'){
+                    setTroca('f');
+                }
+                else{
+                    setTroca('end');
+                    alert("Perdeu");
+                }
             }
         } else {
+           
             alert("Palavra inválida!")
             console.log(response)
         }
@@ -47,7 +65,7 @@ export const Termo = () => {
         <div className={styles.body}>
             <div className={styles.header}>TERMO</div>
             <div className={styles.gameContainer}>
-                <Jogo onSubmit={handleSubmit} palavra={recebePalavra}/>
+                <Jogo onSubmit={handleSubmit} troca={troca} palavraDoDia={arrayPalavra} palavraEnviada= {palavra} palavra={recebePalavra}/>
             </div>
             <div className={styles.keyboardContainer}>
                 <KeyBoard handleSubmit={handleSubmit} />

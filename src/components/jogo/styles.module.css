@@ -26,6 +26,7 @@
 }
 
 .containerInput input {
+    
         all: unset;
     font-family: "Montserrat", sans-serif;
     background-color: #6e5c62;
@@ -44,6 +45,15 @@
     margin: 0 0.7%; 
 }
 
+input[data-exists="true"]{
+    background-color: #d3ad69 !important;
+    
+    box-shadow: inset 0 0 0 0.5vh #d3ad69;
+}
+ input[data-correct="true"]{
+        background-color: #3aa394 !important;
+        box-shadow: inset 0 0 0 0.5vh #3aa394;
+}
 .containerInput input:focus{
     box-shadow: inset 0 0 0 0.5vh #4c4347,
                 inset 0 -1vh 0 0 #4c4347 !important;
