@@ -1,0 +1,15 @@
+{
+  "files": {
+    "main.css": "/clone-Termo/static/css/main.ef990a72.css",
+    "main.js": "/clone-Termo/static/js/main.352fd248.js",
+    "static/js/453.2f03a8e0.chunk.js": "/clone-Termo/static/js/453.2f03a8e0.chunk.js",
+    "index.html": "/clone-Termo/index.html",
+    "main.ef990a72.css.map": "/clone-Termo/static/css/main.ef990a72.css.map",
+    "main.352fd248.js.map": "/clone-Termo/static/js/main.352fd248.js.map",
+    "453.2f03a8e0.chunk.js.map": "/clone-Termo/static/js/453.2f03a8e0.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.ef990a72.css",
+    "static/js/main.352fd248.js"
+  ]
+}
