@@ -17,6 +17,7 @@ export const Termo = () => {
     useEffect(()=>{
         setPalavraDoDia(localStorage.getItem('palavra'));
     })
+    
 
     const [palavra, setPalavra] = useState([]);
     const handleSubmit = () => {
